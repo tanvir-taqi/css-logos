@@ -1,0 +1,232 @@
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.container {
+    width: 508px;
+    height: 508px;
+    /* border: 1px solid black; */
+    margin: 110px 0;
+    
+}
+
+.gitbash{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+    background: #000;
+    border-radius: 20px;
+    
+    transform: rotate(45deg);
+    
+}
+.gitbash-item{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.gitbash-item:nth-child(1){
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+    background: rgb(248, 125, 125);
+}
+.gitbash-item:nth-child(2){
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 40px;
+    background: rgb(129, 221, 129);
+}
+.gitbash-item:nth-child(3){
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 40px;
+    background: rgb(120, 151, 244);
+}
+.gitbash-item:nth-child(4){
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 40px;
+    background: rgb(252, 252, 129);
+}
+
+.item-connection-first{
+    width: 50px;
+    height: 50px; 
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+.item-connection-first::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    overflow: auto;
+    top: 15px;
+    right: 0;
+    
+    background: #000;
+    z-index: 999;
+}
+
+
+.item-connection-second{
+    width: 50px;
+    height: 50px; 
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.item-connection-second::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    overflow: auto;
+    top: 15px;
+    right: 20px;
+    background: #000;
+    z-index: 999;
+}
+.item-connection-last{
+    width: 50px;
+    height: 50px; 
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+}
+
+.item-connection-last::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 220px;
+    overflow: auto;
+    top: -70px;
+    /* left: 20px; */
+    right:5px;
+    background: #000;
+    z-index: 999;
+    transform: rotate(45deg);
+}
+
+
+.codeblocks{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+    background: #000;
+    width: 568px;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+.codeblocks-item{
+    width: 280px;
+    height: 250px;
+    position: relative;
+    
+}
+
+.codeblocks-item:nth-child(1){
+
+    background: rgb(255, 75, 75);
+}
+.codeblocks-item:nth-child(2){
+  
+    background: rgb(25, 195, 6);
+}
+.codeblocks-item:nth-child(3){
+   
+    background: rgb(255, 255, 75);
+}
+.codeblocks-item:nth-child(4){
+    background: rgb(110, 54, 240);
+    
+}
+
+.chrome{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.chrome::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: rgb(65, 119, 220);
+    border: 10px solid white;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 999;
+}
+
+.chrome-red{
+    position: absolute;
+    top: -130px;
+    right: -59px;
+    width: 302px;
+    height: 202px;
+    background: red;
+    z-index: 200;
+    transform: rotate(49deg);
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 10%;
+    
+}
+.chrome-green{
+    position: absolute;
+    bottom: -11px;
+    left: -95px;
+    width: 346px;
+    height: 259px;
+    background: green;
+    z-index: 100;
+    transform: rotate(29deg);
+    border-top-right-radius: 100%;
+    
+}
+.chrome-yellow{
+    position: absolute;
+    bottom: -59px;
+    right: -71px;
+    width: 240px;
+    height: 220px;
+    background: yellow;
+    z-index: 200;
+    transform: rotate(195deg);
+    border-top-right-radius: 100%;
+}
+    
+
+
+  
